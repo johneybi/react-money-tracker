@@ -1,18 +1,24 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/sun-typeface/nanum-barun-gothic@master/nanum-barun-gothic.css');
 
 @theme {
-  --font-outfit: "Outfit", sans-serif;
+  --font-display: "NanumBarunGothic", sans-serif;
+  --font-body: "NanumBarunGothic", sans-serif;
+  
+  --color-base: #E0E5EC;
+  --color-primary: #6C63FF;
+  --color-foreground: #3D4852;
+  --color-muted: #6B7280;
 }
 
 :root {
-  font-family: var(--font-outfit);
+  font-family: var(--font-body);
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light;
-  color: #111827;
-  background-color: #FFFFFF;
+  color: var(--color-foreground);
+  background-color: var(--color-base);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,19 +30,21 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--color-base);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+  font-family: var(--font-display);
   letter-spacing: -0.02em;
+  color: var(--color-foreground);
 }
 
 a {
   text-decoration: none;
-  color: inherit;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease-out;
 }
 
+/* Global Neumorphic Reset */
 * {
-  box-shadow: none !important;
+  box-shadow: none;
 }
