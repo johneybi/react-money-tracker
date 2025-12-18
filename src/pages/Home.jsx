@@ -48,15 +48,15 @@ function Home({ userInfo, addExpense }) {
 </h2>
                     </div>
 
-                    <div className="bg-white rounded-2xl p-6 border-b-4 border-gray-200 hover:scale-[1.02] transition-transform">
-                        <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-0.5">Total Expense</p>
+                    <div className="bg-white rounded-2xl mt-4 p-6 border-b-4 border-gray-200 hover:scale-[1.02] transition-transform">
+                        <p className="text-sm font-black uppercase text-gray-400 mb-0.5">전체 소비</p>
                         <div className="text-4xl font-black text-emerald-500 tracking-tighter">
                             {userInfo.expense.toLocaleString()}<span className="text-xl ml-1 text-slate-800 font-bold">원</span>
                         </div>
                     </div>
 
-                    <div className="flex justify-between items-center px-4 py-3 border-t border-gray-100 mt-2">
-                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Balance Left</span>
+                    <div className="flex justify-between items-center px-3 py-3 border-t border-gray-100 mt-2">
+                        <span className="text-medium font-bold text-gray-400 ">남은 금액</span>
                         <span className="text-lg font-black text-slate-800 tracking-tighter">{balance.toLocaleString()}원</span>
                     </div>
                 </div>
